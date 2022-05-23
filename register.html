@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAAAAAAAAAAAAAAAAAGcAAAB2AAAAagAAAGsAAAB8AAAAhwAAAGkAAACUAAAAcQAAAGEAAABjAAAAVQAAAAAAAAAAAAAAAAAAAAAAAABjAAAAAwAAAAIAAAAvAAAAigAAAHAAAABhAAAAlgAAAH4AAAAlAAAAGQAAAGAAAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA1AAAAcwAAAEQAAAABAAAAAAAAAAsAAABzAAAAgAAAACwAAABWAAAAAAAAAAAAAAAAAAAAAAAAAGUAAAAAAAAAagAAAHAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAFkAAABsAAAAYwAAAAAAAAAAAAAAAAAAAAAAAABbAAAABAAAAJAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKAAAAjAAAAF0AAAAAAAAAAAAAAAAAAAAAAAAAXwAAAAAAAABIAAAAUwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGIAAABcAAAAAAAAAAAAAAAAAAAAAAAAAF4AAAAAAAAACgAAABkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB+AAAAZgAAAAAAAAAAAAAAAAAAAAAAAABeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAAAAmQAAAGYAAAAAAAAAAAAAAAAAAAAAAAAAWwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAagAAAIIAAABeAAAAAAAAAAAAAAAAAAAAAAAAAGIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4AAABCAAAAdAAAAIkAAAAcAAAAXAAAAAAAAAAAAAAAAAAAAAAAAABhAAAABQAAAE8AAABfAAAAaQAAAI8AAABzAAAAagAAAHkAAAANAAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAcgAAAHEAAACIAAAAiwAAAHoAAACNAAAAdAAAADAAAAADAAAAAAAAAAAAAABlAAAAAAAAAAAAAAAAAAAAAAAAAHIAAACRAAAAYAAAABIAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYQAAAAAAAAAAAAAAAAAAAAAAAABqAAAAgwAAAHkAAAAQAAAAAAAAAAAAAAAVAAAASQAAAAAAAAAAAAAAAAAAAGEAAAAAAAAAAAAAAAAAAAAAAAAAWAAAABMAAABmAAAAYAAAAEMAAABkAAAAeAAAAEsAAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAAAAAAAAAAAAFsAAABdAAAAYgAAAIYAAAChAAAAjgAAAJMAAABoAAAAYgAAAFoAAABkAAAAUwAAAAAAAAAAwAMAAMADAADQgwAA08MAAMPjAADT8wAA0+MAAN/jAADfwwAA3wMAAMALAADAGwAAwfsAAMMzAADAOwAAwAMAAA=="
+      rel="icon"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-container">
+        <ul class="nav" id="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="login.html" class="login">Login</a></li>
+          <li>
+            <a href="register.html" class="current-page" class="Register"
+              >Register</a
+            >
+          </li>
+          <li><a href="contact.html" class="contact">Contact</a></li>
+          <li><a href="calculator.html" class="Calc">Calculator</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="form-container">
+    <form id="container" method="GET">
+        <div class="form">
+            <label for="name">First Name:</label>
+            <input id="firstname" type="text" name="firstname" placeholder="Enter your First Name" />
+            <label for="name">Last Name:</label>
+            <input id="lastname" type="text" name="lastname" placeholder="Enter your Last Name" />
+            <label for="phone">Phone:</label>
+            <input id="phone" type="tel" name="phone" />
+             <div class="dropbox">
+            <p>Gender:</p>
+            <select id="Gender">
+                <option value="Male"> Male </option>
+                <option value="Female"> Female </option>
+                <option value="Others"> Other </option>
+            </select />
+            </div>
+             <label for="country">Country:</label>
+            <input id="country" type="text" name="country" />
+            <label for="state/srovince">State/Province:</label>
+            <input id="state" type="text" name="state" />
+            <label for="username">Username:</label>
+            <input id="username" type="text" name="username" />
+            <label for="password">Password:</label>
+            <input id="password" type="password" name="password" />
+             <label for="password">Confirm Password:</label>
+            <input id="password" type="password" name="password" />
+        </div>
+        <button type="submit" id="submit" class="submit-button">
+            SUBMIT
+        </button>
+    </form>
+    </div>
+  </body>
+</html>

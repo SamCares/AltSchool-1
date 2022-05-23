@@ -1,0 +1,272 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgb(14, 21, 37);
+  color: white;
+  font-family: "Open sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: currentcolor;
+}
+
+.current-page {
+  border-bottom: 2px solid rgb(61, 153, 107);
+  padding-bottom: 5px;
+  color: rgb(61, 153, 107);
+}
+
+.nav {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  font-size: 16px;
+  justify-content: space-around;
+  padding: 30px;
+  position: fixed;
+  width: 100%;
+  background: rgb(14, 21, 37);
+}
+
+.nav > li:hover {
+  color: rgb(61, 153, 107);
+}
+
+main {
+  padding-top: 100px;
+}
+
+.copy {
+  text-align: center;
+}
+
+.about-me {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: no-repeat center/cover url(./img/one.jpg);
+  margin-bottom: 4rem;
+}
+
+.my-details {
+  text-align: justify;
+  padding: 4rem;
+  padding-bottom: 12rem;
+}
+
+.goal,
+.education,
+.job-experience {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+#goal-img {
+  width: 100%;
+}
+
+#goal_copy {
+  font-size: 1.8rem;
+  padding: 9.25rem 2.5rem;
+  text-align: center;
+  background-color: rgb(19, 21, 16);
+}
+
+#grad-img {
+  width: 70%;
+}
+
+#education-copy {
+  font-size: 1.8rem;
+  padding: 9.8rem 2.5rem;
+  text-align: center;
+  background-color: rgb(113, 13, 20);
+}
+
+#job-experience-copy {
+  font-size: 1.8rem;
+  padding: 8rem 7.2rem;
+  text-align: center;
+  background-color: rgb(241, 148, 82);
+}
+
+#job-img {
+  width: 46%;
+}
+
+.hobbies-skills {
+  display: flex;
+}
+
+#hobbies {
+  background-color: rgb(241, 148, 82);
+  padding: 7rem;
+}
+#skills {
+  background-color: rgb(113, 13, 20);
+  padding: 7rem;
+}
+/* Form styling */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+#contact-form {
+  border: 5px solid rgb(61, 153, 107);
+  margin: 0 auto;
+}
+
+h3 {
+  color: white;
+  margin: 50px 0px 0px 50px;
+  text-align: center;
+}
+
+#container {
+  background-color: rgba(160, 170, 255, 0.35);
+  padding: 2rem;
+  margin: 0 30% 5% 30%;
+}
+
+input,
+button,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  border: none;
+}
+
+.form label {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.form input,
+.dropbox input,
+.dropbox select {
+  display: block;
+  width: 100%;
+  height: 3rem;
+  margin-bottom: 1rem;
+  padding: 0.38rem 0.8rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form input:focus,
+.dropbox input:focus,
+.dropbox select:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.message textarea {
+  min-height: 100px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: rgb(72, 3, 233);
+  color: inherit;
+  border-radius: 2px;
+  cursor: pointer;
+}
+/* Form styling ends here */
+
+/* calculator styling starts heere */
+.calculator-container {
+  padding-top: 100px;
+}
+.calculator {
+  padding: 10px;
+  border-radius: 1em;
+  height: 380px;
+  width: 400px;
+  margin: auto;
+  background-color: #191b28;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.display-box {
+  font-family: "Orbitron", sans-serif;
+  background-color: #dcdbe1;
+  border: solid black 0.5px;
+  color: black;
+  border-radius: 5px;
+  width: 100%;
+  height: 65%;
+}
+.button {
+  font-family: "Orbitron", sans-serif;
+  background-color: #64278f;
+  color: white;
+  border: solid black 0.5px;
+  width: 100%;
+  border-radius: 5px;
+  height: 70%;
+  outline: none;
+}
+.button:active {
+  background: #e5e5e5;
+  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+  -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+  box-shadow: inset 0px 0px 5px #c1c1c1;
+}
+/* calculator styling ends here */
+
+footer {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+
+footer > p {
+  margin: 2rem;
+}
+
+footer i {
+  vertical-align: middle;
+}

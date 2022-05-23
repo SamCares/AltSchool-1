@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-container">
+        <ul class="nav" id="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="login.html" class="login">Login</a></li>
+          <li><a href="register.html" class="Register">Register</a></li>
+          <li>
+            <a href="contact.html" class="current-page" class="contact"
+              >Contact</a
+            >
+          </li>
+          <li><a href="calculator.html" class="Calc">Calculator</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="form-container">
+    <form id="container" method="GET">
+        <div class="form">
+            <label for="name">First Name:</label>
+            <input id="firstname" type="text" name="firstname" placeholder="Enter your First Name" />
+            <label for="name">Last Name:</label>
+            <input id="lastname" type="text" name="lastname" placeholder="Enter your Last Name" />
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" placeholder="Enter your Email Address" />
+        </div>
+
+        <div class="message">
+            <p>Message:</p>
+            <textarea id="comment name="comment" placeholder="Enter your Message here..."></textarea>
+        </div>
+
+        <button type="submit" id="submit" class="submit-button">
+            SEND
+        </button>
+    </form>
+    </div>
+  </body>
+</html>
